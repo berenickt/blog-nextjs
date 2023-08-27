@@ -1,6 +1,6 @@
-import { MetaData } from './MetaData.interface';
+import { MetaData } from './MetaData.interface'
 
 export interface Post {
-  slug: string;
-  metaData: MetaData;
+  slug: string
+  metaData: MetaData
 }

@@ -1,1 +1,1 @@
-export type Topic = 'TypeScript' | 'Node';
+export type Topic = 'TypeScript' | 'Node'

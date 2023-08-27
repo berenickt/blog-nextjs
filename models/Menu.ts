@@ -1,2 +1,2 @@
-export type MenuItem = Record<string, Array<string>>;
-export type Menu = Array<MenuItem>;
+export type MenuItem = Record<string, Array<string>>
+export type Menu = Array<MenuItem>

@@ -1,5 +1,5 @@
 const FooterComponent = () => {
-  const FOOTER_HEIGHT_PX = '256px';
+  const FOOTER_HEIGHT_PX = '256px'
 
   return (
     <footer
@@ -24,7 +24,7 @@ const FooterComponent = () => {
         Jon Peppinck &copy; 2021-{new Date().getFullYear()}.
       </div>
     </footer>
-  );
-};
+  )
+}
 
-export default FooterComponent;
+export default FooterComponent

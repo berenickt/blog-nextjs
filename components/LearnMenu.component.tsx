@@ -1,13 +1,13 @@
-import Link from 'next/link';
+import Link from 'next/link'
 
-import { FC } from 'react';
+import { FC } from 'react'
 
-import Paper from '@mui/material/Paper';
-import MenuList from '@mui/material/MenuList';
-import MenuItem from '@mui/material/MenuItem';
-import Typography from '@mui/material/Typography';
+import Paper from '@mui/material/Paper'
+import MenuList from '@mui/material/MenuList'
+import MenuItem from '@mui/material/MenuItem'
+import Typography from '@mui/material/Typography'
 
-import { TopicLogo, allTopicLogos } from '../utils/learn/topicLogos';
+import { TopicLogo, allTopicLogos } from '../utils/learn/topicLogos'
 
 const LearnMenuComponent: FC = () => {
   return (
@@ -15,23 +15,15 @@ const LearnMenuComponent: FC = () => {
       <Paper sx={{ width: 320, maxWidth: '100%' }}>
         <MenuList>
           {allTopicLogos.map((topic: TopicLogo, index: number) => (
-            <Link
-              key={index}
-              href={`/learn/${topic.topic.toLowerCase()}/introduction`}
-              passHref
-            >
+            <Link key={index} href={`/learn/${topic.topic.toLowerCase()}/introduction`} passHref>
               <MenuItem
-                className='menu-item'
+                className="menu-item"
                 sx={{
                   height: '50px',
                 }}
               >
-                <img
-                  style={{ marginRight: '20px' }}
-                  src={topic.logoUrl}
-                  alt='topic-logo'
-                />
-                <Typography variant='body1' color='text.secondary'>
+                <img style={{ marginRight: '20px' }} src={topic.logoUrl} alt="topic-logo" />
+                <Typography variant="body1" color="text.secondary">
                   {topic.topic}
                 </Typography>
               </MenuItem>
@@ -45,7 +37,7 @@ const LearnMenuComponent: FC = () => {
           }
         `}</style>
     </>
-  );
-};
+  )
+}
 
-export default LearnMenuComponent;
+export default LearnMenuComponent

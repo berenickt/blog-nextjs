@@ -1,5 +1,5 @@
 export interface LearnMetaData {
-  section: string;
-  subSection?: string;
-  topic: string;
+  section: string
+  subSection?: string
+  topic: string
 }
